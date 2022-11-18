@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <body>
+
+    <div id="con">
+      <div class="tab">
+        <h3>Kaif CRMP</h3>
+        <p>Онлайн игра про Россию с бонусом при старте игры 🎁
+          НАПИШИ #KAIF В ЛИЧНЫЕ СООБЩЕНИЯ И ПОСТАВЬ ❤ НА ЭТОТ ПОСТ - ПОЛУЧИ БОНУС 😎 </p>
+        <button class="delete">[x]</button>
+      </div>
+      <div class="tab">
+        <h3>GTA RP</h3>
+        <p>Сервак умер еще в 2018 году, но не расходитесь есть KAIF CRMP</p>
+        <button class="delete">[x]</button>
+      </div>
+      <div class="tab">
+        <h3>Radmir RP</h3>
+        <p>До него далеко, но мы попытаемся обогнать топ 1 по КРМП
+        </p>
+        <button class="delete">[x]</button>
+      </div>
+    </div>
+  
+    <script>
+      con.onclick = function(event) {
+        if (event.target.className != 'delete') return;
+  
+        let tab = event.target.closest('.tab');
+        tab.remove();
+      };
+    </script>
+</html>
